@@ -11,10 +11,12 @@
 //Para uso do node no VsCode foi utilizado o comando npm install prompt-sync para obtenção dos dados externos
 const prompt = require('prompt-sync')();
 
+//Entrada de dados via usuário
 let ladoA = Number(prompt("Informe o lado A: "));
 let ladoB = Number(prompt("Informe o lado B: "));
 let ladoC = Number(prompt("Informe o lado C: "));
 
+//Confirmação de as informações vinda do usuário pode ser usadas para identificação de um triângulo
 const formaTriangulo = (
     ladoA > 0 && ladoB > 0 && ladoC > 0 &&
     ladoA < ladoB + ladoC &&
@@ -22,6 +24,7 @@ const formaTriangulo = (
     ladoC < ladoA + ladoB
 );
 
+//Classificando o tipo de Triângulo (Equilátero, isósceles e escaleno)
 if (formaTriangulo) {
     if (ladoA === ladoB && ladoB === ladoC) {
         console.log("Triângulo equilátero");
