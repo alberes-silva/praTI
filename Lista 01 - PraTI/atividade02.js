@@ -1,6 +1,15 @@
+/*
+ * Crie um programa que classifica a idade de uma pessoa em categorias (criança,
+ * adolescente, adulto, idoso) com base no valor fornecido, utilizando uma estrutura de
+ * controle if-else.
+ */
+
+
+//Para uso do node no VsCode foi utilizado o comando npm install prompt-sync para obtenção dos dados externos
+
 const prompt = require('prompt-sync')()
 
-let idade = parseInt(prompt("Informe a idade da pessoa: "))
+let idade = Number(prompt("Informe a idade da pessoa: "))
 
 if(idade > 0){
     if(idade <= 15){
