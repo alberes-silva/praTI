@@ -34,11 +34,11 @@ if(parseFloat(media)){
 if(!isNaN(media) && media >= 0 && media <=10){
     if (media < 5){
     console.log("Aluno reprovado");
-} else if (media >= 5 && media < 7){
+    } else if (media >= 5 && media < 7){
     console.log("Aluno em recuperação");
-} else {
+    } else {
     console.log("aluno Aprovado");
-}
+    }
 } else {
     console.log("Reveja os valores informados nas notas")
 }
