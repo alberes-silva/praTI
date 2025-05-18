@@ -9,14 +9,17 @@
 
 const prompt = require('prompt-sync')()
 
+//Entrada de dados
 let idade = Number(prompt("Informe a idade da pessoa: "))
 
-if(idade > 0){
-    if(idade <= 15){
+
+//Processamento de dados com verificação de erro
+if(Number.isInteger(idade) && (idade > 0)){
+    if(idade <= 12){
         console.log("A pessoa é uma criança")
-    } else if(idade > 15 && idade <= 21){
+    } else if(idade > 12 && idade <= 18){
         console.log("A pessoa é um adolescente")
-    } else if(idade > 21 && idade < 65){
+    } else if(idade > 19 && idade < 59){
         console.log("A pessoa é um adulto")
     }else {
         console.log("A pessoa é um idoso")
